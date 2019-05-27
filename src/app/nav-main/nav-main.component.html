@@ -1,0 +1,25 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content fixedInViewport="true">
+      <mat-toolbar color="primary">
+      <h1>Pharma Quimicos</h1>
+
+        <!--  ESCRITORIO  -->
+        <div *ngIf="!(isHandset$ | async)">
+          <H1>Escritorio</H1>
+
+          </div>
+
+        <!--  MOBILE  -->
+        <div *ngIf="(isHandset$ | async)">
+          <h1>Mobile</h1>
+
+          </div>
+
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
