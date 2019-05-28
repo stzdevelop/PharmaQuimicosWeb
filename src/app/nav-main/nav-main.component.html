@@ -1,22 +1,32 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav-content fixedInViewport="true">
+  <!--  ESCRITORIO  -->
+  <mat-sidenav-content #desktop fixedInViewport="true" *ngIf="!(isHandset$ | async)">
       <mat-toolbar color="primary">
-      <h1>Pharma Quimicos</h1>
-
-        <!--  ESCRITORIO  -->
-        <div *ngIf="!(isHandset$ | async)">
-          <H1>Escritorio</H1>
-
-          </div>
-
-        <!--  MOBILE  -->
-        <div *ngIf="(isHandset$ | async)">
-          <h1>Mobile</h1>
-
-          </div>
-
-    </mat-toolbar>
+          <h1>Pharma Quimicos SAS</h1>
+          <span class="var-spacer"></span>
+          <button mat-button>Inicio</button>
+          <button mat-button>Productos</button>
+          <button mat-button>Clientes</button>
+          <button mat-button>Nosotros</button>
+          <button mat-button>Contacto</button>
+          
+      </mat-toolbar>
   </mat-sidenav-content>
+
+<!--  MOBILE  -->
+<mat-sidenav-content #desktop fixedInViewport="true" *ngIf="(isHandset$ | async)">
+    <mat-toolbar color="primary">
+        <h1>Pharma Quimicos</h1>
+    </mat-toolbar>
+    <mat-toolbar class="toolbar-mobile" color="primary">
+        <button mat-button>Inicio</button>
+        <button mat-button>Productos</button>
+        <button mat-button>Clientes</button>
+        <button mat-button>Nosotros</button>
+        <button mat-button>Contacto</button>
+      </mat-toolbar>
+</mat-sidenav-content>
+
 </mat-sidenav-container>
 
 
