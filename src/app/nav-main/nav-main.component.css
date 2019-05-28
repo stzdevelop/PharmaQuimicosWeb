@@ -9,7 +9,11 @@ body{
 }
 
 .sidenav-container h1{
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sidenav-container button{
+  font-family: 'Comfortaa', cursive;
 }
 
 .var-spacer {
