@@ -23,3 +23,7 @@ body{
 .sidenav-container.toolbar-mobile {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+
+.sidenav-container mat-sidenav-content{
+  margin-right: 3%;
+}

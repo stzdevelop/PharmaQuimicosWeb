@@ -2,37 +2,40 @@
   <!--  ESCRITORIO  -->
   <mat-sidenav-content #desktop fixedInViewport="true" *ngIf="!(isHandset$ | async)">
       <mat-toolbar color="primary">
-          <h1>Pharma Quimicos SAS</h1>
+          <h1>Pharma Quimicos</h1>
           <span class="var-spacer"></span>
           <button mat-button>Inicio</button>
           <button mat-button>Productos</button>
           <button mat-button>Clientes</button>
           <button mat-button>Nosotros</button>
           <button mat-button>Contacto</button>
+          <button mat-icon-button (click)="openDialog()">
+                <mat-icon>search</mat-icon>
+            </button>
           
       </mat-toolbar>
   </mat-sidenav-content>
 
 <!--  MOBILE  -->
-<mat-sidenav-content #desktop fixedInViewport="true" *ngIf="(isHandset$ | async)">
+<mat-sidenav-content #mobile fixedInViewport="true" *ngIf="(isHandset$ | async)">
     <mat-toolbar color="primary">
         <h1>Pharma Quimicos</h1>
     </mat-toolbar>
     <mat-toolbar class="toolbar-mobile" color="primary">
-        <button mat-button>Inicio</button>
+        <button mat-icon-button>
+                <mat-icon>home</mat-icon>
+                </button>
         <button mat-button>Productos</button>
         <button mat-button>Clientes</button>
         <button mat-button>Nosotros</button>
-        <button mat-button>Contacto</button>
+        <button mat-icon-button>
+            <mat-icon>contact_support</mat-icon>
+            </button>
       </mat-toolbar>
 </mat-sidenav-content>
 
 </mat-sidenav-container>
 
-<app-footer-main>
-
-
-</app-footer-main>
 
 
 

@@ -13,7 +13,7 @@ import { FooterMainComponent } from './footer-main/footer-main.component';
   declarations: [
     AppComponent,
     NavMainComponent,
-    FooterMainComponent
+    FooterMainComponent    
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,7 @@ import { FooterMainComponent } from './footer-main/footer-main.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
