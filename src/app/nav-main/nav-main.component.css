@@ -1,11 +1,22 @@
+li{
+  display: inline;
+  float: left;
+}
+
+a{
+  display: block;
+}
+
 body{
   margin: 0;
   padding: 0;
 }
 
 .sidenav-container {
-  height: 100%;  
-  box-shadow: -1px -1px 4px 4px #b9b9b9;  
+  width: 100%;  
+  box-shadow: -1px -1px 4px 4px #b9b9b9;
+  position: fixed;
+  top: 0;
 }
 
 .sidenav-container h1{
